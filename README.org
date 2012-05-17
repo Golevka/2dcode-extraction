@@ -1,6 +1,6 @@
 * 2D Code Extraction - Extract 2D Code from Invoice Images
 
-[[./fig/extract_2d_code_small.png]]
+[[https://github.com/Golevka/2dcode-extraction/raw/master/fig/extract_2d_code_small.png]]
 
 ** Introduction
 
@@ -18,9 +18,9 @@ kind of invoice, we hardcoded the approximate location and size of the 2d code
 as well as the padding around it to make the result more accurate. Now it can
 even handle the worst case they have ever met.
 
-[[./fig/sample_bad.png]]
+[[https://github.com/Golevka/2dcode-extraction/raw/master/fig/sample_bad.png]]
 
-[[./fig/extracted.png]]
+[[https://github.com/Golevka/2dcode-extraction/raw/master/fig/extracted.png]]
 
 
 ** Try a Shakedown Run
