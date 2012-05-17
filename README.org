@@ -1,0 +1,30 @@
+* 2D Code Extraction - Extract 2D Code from Invoice Images
+
+[[./fig/extract_2d_code_small.png]]
+
+** Introduction
+
+This is a sub problem coming from a real world project: an automatic invoice
+information logging system for a supermarket which extracts information
+inhibited by the 2D codes printed at the upper right placeholder of the
+invoices. Unfortunately some of the 2D codes were so badly posed that they
+overlapped with the border of the box, which makes locating and extracting
+these codes more difficult. We dealt this problem with a simple scanning line
+algorithm and came up with a quick and dirty solution. By the way, this project
+is just for demonstration and won't be pushed to the trunk of that project.
+
+This program uses a simple and trival method which *only* apply to exactly this
+kind of invoice, we hardcoded the approximate location and size of the 2d code
+as well as the padding around it to make the result more accurate. Now it can
+even handle the worst case they have ever met.
+
+[[./fig/sample_bad.png]]
+
+[[./fig/extracted.png]]
+
+
+** Try a Shakedown Run
+
+Build the project with =make= and go to =bin= folder, which contains a demo
+script and some sample invoice images, type =./demo.sh sample_1.ppm= to launch
+the program, you can also play with the other 3 samples in the same way.
